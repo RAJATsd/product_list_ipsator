@@ -12,3 +12,5 @@ My Design decisions :
 4. Material UI used for icons and components
 5. Individual parts of redux of corresponding containers are situated in the container's own folder
 6. Utils are made to reduced duplicacy
+
+Deployed link to the project : https://product-list-ipsator.vercel.app/
