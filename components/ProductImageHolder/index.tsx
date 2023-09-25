@@ -1,4 +1,9 @@
-const ProductImageHolder = ({ imgSrc, altText }) => {
+interface ProductImageHolderProps {
+  imgSrc: string;
+  altText: string;
+}
+
+const ProductImageHolder = ({ imgSrc, altText }: ProductImageHolderProps) => {
   return (
     <div className="h-72 bg-gray-300">
       {imgSrc && (

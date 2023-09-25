@@ -1,6 +1,4 @@
 import ProductImageHolder from "../ProductImageHolder";
-import styles from "./styles.module.css";
-
 interface ProductCardProps {
   title: string;
   description: string;

@@ -1,4 +1,5 @@
 import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+import { Dispatch, SetStateAction } from "react";
 
 const categorys = [
   "smartphones",
@@ -15,12 +16,19 @@ const categorys = [
   "mens-shoes",
 ];
 
+interface FilterProps {
+  sortValue: string;
+  onSortValueChange: (val: string) => void;
+  categoryValue: string;
+  oncategoryChange: Dispatch<SetStateAction<string>>;
+}
+
 const Filters = ({
   sortValue,
   onSortValueChange,
   categoryValue,
   oncategoryChange,
-}) => {
+}: FilterProps) => {
   return (
     <div className="flex w-full justify-end p-2">
       <FormControl size="small" sx={{ m: 1, minWidth: 160 }}>

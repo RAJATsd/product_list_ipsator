@@ -13,8 +13,12 @@ const makeSelectSearchedProducts = () =>
 const makeSelectSearchQuery = () =>
   createSelector(selectProductState, (subState) => subState.searchQuery);
 
+const makeSelectMoreProducts = () =>
+  createSelector(selectProductState, (subState) => subState.nextProducts);
+
 export {
   makeSelectProductsList,
   makeSelectSearchedProducts,
   makeSelectSearchQuery,
+  makeSelectMoreProducts,
 };

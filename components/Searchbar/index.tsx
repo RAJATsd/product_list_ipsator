@@ -32,7 +32,7 @@ const SearchBar = () => {
     dispatch(searchProductSuccess(null));
   };
 
-  const handleUpdateSearchQuery = (query) => {
+  const handleUpdateSearchQuery = (query: string) => {
     dispatch(updateSearchQuery(query));
   };
 
